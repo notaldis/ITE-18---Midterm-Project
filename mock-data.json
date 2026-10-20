@@ -1,0 +1,46 @@
+{
+  "equipment": [
+    { "Equipment_ID": 1, "Brand_ID": 1, "SerialNumber": "CAT-797F-2026-001", "Category": "Haulage", "Status_ID": 1, "PurchaseDate": "2025-03-15", "Location_ID": 1 },
+    { "Equipment_ID": 2, "Brand_ID": 2, "SerialNumber": "KOM-HD465-2026-042", "Category": "Excavation", "Status_ID": 2, "PurchaseDate": "2024-11-10", "Location_ID": 2 }
+  ],
+  "statuses": [
+    { "Status_ID": 1, "StatusName": "Active" },
+    { "Status_ID": 2, "StatusName": "Under Maintenance" },
+    { "Status_ID": 3, "StatusName": "Decommissioned" }
+  ],
+  "brands": [
+    { "Brand_ID": 1, "BrandName": "Caterpillar", "Model": "797F" },
+    { "Brand_ID": 2, "BrandName": "Komatsu", "Model": "HD465" }
+  ],
+  "locations": [
+    { "Location_ID": 1, "LocationName": "Pit A Surface Depot", "Type": "Mining Site", "Supervisor_ID": 1 },
+    { "Location_ID": 2, "LocationName": "Central Maintenance Workshop", "Type": "Work Area", "Supervisor_ID": 2 },
+    { "Location_ID": 3, "LocationName": "Central Main Warehouse", "Type": "Warehouse", "Supervisor_ID": 1 }
+  ],
+  "employees": [
+    { "Employee_ID": 1, "FirstName": "Elena", "LastName": "Cruz", "Role_ID": 1, "ContactNumber": "09182234410", "Email": "ecruz@minetrack.com" },
+    { "Employee_ID": 2, "FirstName": "Ramon", "LastName": "Santos", "Role_ID": 2, "ContactNumber": "09174028819", "Email": "rsantos@minetrack.com" }
+  ],
+  "roles": [
+    { "Role_ID": 1, "RoleType": "Site Supervisor" },
+    { "Role_ID": 2, "RoleType": "Heavy Equipment Mechanic" }
+  ],
+  "inventory": [
+    { "Item_ID": 101, "ItemName": "High-Pressure Hydraulic Hose", "Stock_Keeping_Unit": "SKU-HYD-001", "Category": "Hydraulic", "QuantityInStock": 8, "ReorderLevel": 10, "UnitCost": 4500.00, "Supplier_ID": 1, "Warehouse_ID": 3 }
+  ],
+  "suppliers": [
+    { "Supplier_ID": 1, "SupplierName": "Caterpillar Global Parts", "Phone": "09175550192", "Email": "sales@catglobal.ph", "Address": "Butuan City" }
+  ],
+  "workorders": [
+    { "WorkOrder_ID": 501, "Equipment_ID": 2, "Assigned_Employee_ID": 2, "IssueDescription": "Hydraulic leak detected in main boom lift cylinder.", "Priority_ID": 4, "Status": "In Progress", "CreatedAt": "2026-10-14", "ResolvedAt": "" }
+  ],
+  "priorities": [
+    { "Priority_ID": 1, "PriorityLevel": "Low" },
+    { "Priority_ID": 2, "PriorityLevel": "Medium" },
+    { "Priority_ID": 3, "PriorityLevel": "High" },
+    { "Priority_ID": 4, "PriorityLevel": "Critical" }
+  ],
+  "workorderparts": [
+    { "WorkOrder_ID": 501, "Item_ID": 101, "QuantityUsed": 2 }
+  ]
+}
